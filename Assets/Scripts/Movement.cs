@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		mouvement = new Vector3 (0, 0, 0);
 
 		if (Input.GetKey (codeHaut)) {
