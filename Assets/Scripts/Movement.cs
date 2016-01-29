@@ -15,13 +15,29 @@ public class Movement : MonoBehaviour {
 	private Vector3 mouvement;
 	Component spriteOriginal;
 	public Sprite Avecunobjet;
+	public bool glace;
+	private int vitesseDeGlisse;
 
 
 	// Use this for initialization
 	void Start () {
 		spriteOriginal = GetComponent<SpriteRenderer>();
+		glace = false;
 	}
-	
+
+	void OnTriggerEnter2D(Collider2D collider){
+		if (collider.GetComponent<Glissement>() == null) {
+			// Rien
+		} else {
+			glace = true;
+			vitesseDeGlisse = collider.GetComponent<Glissement>().coefficient;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D collider){
+		glace = false;
+	}
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		mouvement = new Vector3 (0, 0, 0);
@@ -42,12 +58,17 @@ public class Movement : MonoBehaviour {
 			mouvement += new Vector3 (-currentSpeed, 0, 0);
 		}
 
-		if (Input.GetKeyDown (codePositif)) {
-			Debug.Log("Interaction positive");
-			GetComponent<SpriteRenderer>().sprite = Avecunobjet;
+
+		if (glace) {
+			// Ajoute l'inertie sur la glace
+			GetComponent<Rigidbody2D> ().AddForce (mouvement * Time.deltaTime * vitesseDeGlisse);
+		} else {
+			GetComponent<Rigidbody2D> ().velocity = new Vector3 (0, 0, 0);
 		}
 
+		//Bouge le joueur pour la frame
 		transform.Translate (mouvement * Time.deltaTime);
+
 
 	}
 }
