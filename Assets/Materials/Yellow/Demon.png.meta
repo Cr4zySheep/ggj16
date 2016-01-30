@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: 048c9044293b5384a8d5d332eb77cf24
+timeCreated: 1454173149
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Demon_0
+    21300002: Demon_1
+    21300004: Demon_2
+    21300006: Demon_3
+    21300008: Demon_4
+    21300010: Demon_5
+    21300012: Demon_6
+    21300014: Demon_7
+    21300016: Demon_8
+    21300018: Demon_9
+    21300020: Demon_10
+    21300022: Demon_11
+    21300024: Demon_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Demon_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 54}
+        - {x: -18, y: 49}
+        - {x: -32, y: 22}
+        - {x: -32, y: -28}
+        - {x: -27, y: -47}
+        - {x: -23, y: -54}
+        - {x: 29, y: -54}
+        - {x: 32, y: -53}
+        - {x: 32, y: 36}
+        - {x: 10, y: 54}
+    - name: Demon_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 48}
+        - {x: -32, y: 35}
+        - {x: -32, y: -45}
+        - {x: -24, y: -54}
+        - {x: 29, y: -54}
+        - {x: 32, y: -46}
+        - {x: 32, y: 29}
+        - {x: 15, y: 48}
+    - name: Demon_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 44}
+        - {x: -32, y: 38}
+        - {x: -32, y: -46}
+        - {x: -25, y: -54}
+        - {x: 32, y: -54}
+        - {x: 32, y: 44}
+    - name: Demon_3
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 44}
+        - {x: -32, y: 26}
+        - {x: -32, y: -45}
+        - {x: -24, y: -54}
+        - {x: 23, y: -54}
+        - {x: 32, y: -46}
+        - {x: 32, y: 29}
+        - {x: 27, y: 44}
+    - name: Demon_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 40}
+        - {x: 10, y: 44}
+        - {x: -14, y: 44}
+        - {x: -22, y: 34}
+        - {x: -32, y: 15}
+        - {x: -32, y: -54}
+        - {x: 26, y: -54}
+        - {x: 28, y: -47}
+        - {x: 32, y: -26}
+        - {x: 32, y: 7}
+    - name: Demon_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 44}
+        - {x: -16, y: 44}
+        - {x: -29, y: 39}
+        - {x: -32, y: 33}
+        - {x: -32, y: -42}
+        - {x: -28, y: -54}
+        - {x: 26, y: -54}
+        - {x: 32, y: -43}
+        - {x: 32, y: 9}
+        - {x: 23, y: 41}
+    - name: Demon_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 44}
+        - {x: -32, y: 21}
+        - {x: -32, y: -32}
+        - {x: -28, y: -52}
+        - {x: -25, y: -54}
+        - {x: 24, y: -54}
+        - {x: 32, y: -42}
+        - {x: 32, y: 15}
+        - {x: 25, y: 44}
+    - name: Demon_7
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 44}
+        - {x: -32, y: 23}
+        - {x: -32, y: -32}
+        - {x: -27, y: -47}
+        - {x: -25, y: -54}
+        - {x: 32, y: -54}
+        - {x: 32, y: 44}
+    - name: Demon_8
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: -14}
+        - {x: 26, y: -14}
+        - {x: 28, y: -12}
+        - {x: 32, y: -3}
+        - {x: 22, y: 41}
+        - {x: 11, y: 44}
+        - {x: -16, y: 44}
+        - {x: -27, y: 37}
+        - {x: -32, y: 15}
+        - {x: -32, y: -41}
+        - {x: -24, y: -54}
+        - {x: 30, y: -54}
+        - {x: 32, y: -43}
+        - {x: 32, y: -14}
+    - name: Demon_9
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 44}
+        - {x: -19, y: 44}
+        - {x: -32, y: 27}
+        - {x: -32, y: -40}
+        - {x: -28, y: -54}
+        - {x: 28, y: -54}
+        - {x: 30, y: -45}
+        - {x: 30, y: 27}
+        - {x: 21, y: 41}
+    - name: Demon_10
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -7}
+        - {x: 19, y: -13}
+        - {x: 19, y: -25}
+        - {x: 27, y: -30}
+        - {x: 30, y: -25}
+        - {x: 30, y: 10}
+        - {x: 21, y: 40}
+        - {x: 10, y: 44}
+        - {x: -20, y: 44}
+        - {x: -29, y: 39}
+        - {x: -30, y: 34}
+        - {x: -30, y: -26}
+        - {x: -24, y: -26}
+        - {x: -19, y: -23}
+        - {x: -19, y: -13}
+        - {x: -19, y: -15}
+        - {x: -18, y: -27}
+        - {x: -30, y: -29}
+        - {x: -30, y: -40}
+        - {x: -25, y: -54}
+        - {x: 25, y: -54}
+        - {x: 30, y: -39}
+        - {x: 17, y: -25}
+        - {x: 19, y: -19}
+    - name: Demon_11
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 44}
+        - {x: -31, y: 26}
+        - {x: -31, y: -28}
+        - {x: -30, y: -32}
+        - {x: -20, y: -23}
+        - {x: -20, y: -9}
+        - {x: -18, y: -11}
+        - {x: -22, y: -35}
+        - {x: -27, y: -43}
+        - {x: -29, y: -51}
+        - {x: -24, y: -54}
+        - {x: 29, y: -54}
+        - {x: 29, y: 44}
+    - name: Demon_12
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 10
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -30}
+        - {x: 30, y: 10}
+        - {x: 21, y: 40}
+        - {x: 13, y: 44}
+        - {x: -17, y: 44}
+        - {x: -30, y: 26}
+        - {x: -30, y: -29}
+        - {x: -29, y: -30}
+        - {x: -23, y: -28}
+        - {x: -18, y: -19}
+        - {x: -20, y: -10}
+        - {x: -17, y: -11}
+        - {x: -18, y: -23}
+        - {x: -22, y: -35}
+        - {x: -20, y: -48}
+        - {x: -20, y: -52}
+        - {x: 14, y: -52}
+        - {x: 16, y: -50}
+        - {x: 16, y: -48}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
