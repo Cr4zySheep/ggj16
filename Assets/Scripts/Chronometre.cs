@@ -77,6 +77,9 @@ public class Chronometre : MonoBehaviour {
 			joueurs [numero%2].possessed = false;
 			numero = numero + 1;
 			tempsPossession = 0;
+			joueurs [numero % 2].gameObject.GetComponent<Movement> ().initialSpeed = 6;
+			//VITESSE ++
+			//NOUVEAUX COMPORTEMENTS ENABLED
 			//Debug.Log (joueurs [numero % 2].possessed);
 		}
 

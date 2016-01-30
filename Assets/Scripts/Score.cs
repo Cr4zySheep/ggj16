@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 	public Text label;
-	int score;
+	public int score;
 
 	// Use this for initialization
 	void Awake () {
