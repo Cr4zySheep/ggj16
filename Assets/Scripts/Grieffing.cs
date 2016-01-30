@@ -7,8 +7,13 @@ public class Grieffing : MonoBehaviour {
 	public float reloadTime = .5f;
 	public GameObject hitPoint;
 
+	Animator anim;
 	float currentStonedTime = 0;
 	float currentReloadTime = 0;
+
+	void Awake() {
+		anim = GetComponent<Animator> ();
+	}
 
 	void Update() {
 		if (currentReloadTime >= 0) {
@@ -30,6 +35,7 @@ public class Grieffing : MonoBehaviour {
 			currentReloadTime = reloadTime;
 			Instantiate (hitPoint, (transform.position + collider.transform.position) / 2, new Quaternion());
 			grieffing.hurt (stonedTime);
+			anim.SetTrigger ("Fight");
 		}
 	}
 

@@ -57,6 +57,11 @@ public class Movement : MonoBehaviour {
 			anim.SetTrigger ("GoLeft");
 		}
 
+		if (mouvement == new Vector3 (0, 0, 0)) {
+			Debug.Log ("ok");
+			anim.SetTrigger ("Stop");
+		}
+
 		if (glace) {
 			// Ajoute l'inertie sur la glace
 			GetComponent<Rigidbody2D> ().AddForce (mouvement * Time.deltaTime * vitesseDeGlisse);
