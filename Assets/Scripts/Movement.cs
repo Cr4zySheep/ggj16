@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+		currentSpeed = initialSpeed;
 		glace = false;
 		anim = GetComponent<Animator> ();
 	}
@@ -36,10 +37,7 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		mouvement = new Vector3 (0, 0, 0);
-		currentSpeed = initialSpeed;
-		if (Input.GetKey (codeSprint)) {
-			currentSpeed=2*currentSpeed;
-		}
+
 		if (Input.GetKey (codeHaut)) {
 			mouvement += new Vector3 (0, currentSpeed, 0);
 			anim.SetTrigger ("GoUp");
@@ -59,6 +57,8 @@ public class Movement : MonoBehaviour {
 
 		if (mouvement == new Vector3 (0, 0, 0)) {
 			anim.SetTrigger ("Stop");
+		} else if (Input.GetKey (codeSprint)) {
+			mouvement *= 2;
 		}
 
 		if (glace) {

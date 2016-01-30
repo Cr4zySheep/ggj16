@@ -21,6 +21,7 @@ public class Collectable : MonoBehaviour {
 			currentTime -= Time.deltaTime;
 			if (currentTime <= 0) {
 				GetComponent<BoxCollider2D> ().isTrigger = true;
+				owner = null;
 			}
 		}
 		transform.Translate (movement * Time.deltaTime);
@@ -47,6 +48,6 @@ public class Collectable : MonoBehaviour {
 	}
 
 	public bool isCollectable() {
-		return currentTime < 0;
+		return currentTime < 0 && !owner;
 	}
 }
