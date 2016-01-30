@@ -6,7 +6,7 @@ public class CollectMarmitte : MonoBehaviour {
 	public Image img;
 	public Slider slider;
 	public Color flash;
-	public Text victory;
+	public GameObject victory;
 
 	float currentTime = 0;
 
@@ -27,7 +27,7 @@ public class CollectMarmitte : MonoBehaviour {
 			currentTime = 0;
 
 			if (slider.value >= slider.maxValue) {
-				victory.enabled = true;
+				victory.SetActive (true);
 			}
 		}
 	}
