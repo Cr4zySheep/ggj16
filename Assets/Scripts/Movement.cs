@@ -58,7 +58,6 @@ public class Movement : MonoBehaviour {
 		}
 
 		if (mouvement == new Vector3 (0, 0, 0)) {
-			Debug.Log ("ok");
 			anim.SetTrigger ("Stop");
 		}
 
