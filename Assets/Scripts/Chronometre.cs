@@ -68,6 +68,8 @@ public class Chronometre : MonoBehaviour {
 
 		tempsPossession += Time.deltaTime;
 		if ((int) tempsPossession == 30) {
+			GameObject gameObj = joueurs [numero % 2].gameObject;
+			gameObj.GetComponent<Animator> ().SetTrigger ("DemonOn");
 			joueurs [numero % 2].possessed = true;
 			//Debug.Log (joueurs [numero % 2].possessed);
 		}
