@@ -2,25 +2,16 @@
 using System.Collections;
 
 public class Possession : MonoBehaviour {
+	public GameObject demon;
 
-	public bool possessed;
-	// a passer en prive
-
-	void setPossessed(bool b){
-		this.possessed = b;
+	void Awake() {
+		PossessionTimer.demons.Add (this);
 	}
 
-	bool getPossessed(){
-		return this.possessed;
-	}
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public void beginPossession(float time) {
+		GameObject obj = Instantiate (demon);
+		obj.transform.position = transform.position;
+		obj.GetComponent<ShortLife> ().beginLife (time);
+		Destroy (gameObject);
 	}
 }

@@ -70,11 +70,9 @@ public class Chronometre : MonoBehaviour {
 		if ((int) tempsPossession == 30) {
 			GameObject gameObj = joueurs [numero % 2].gameObject;
 			gameObj.GetComponent<Animator> ().SetTrigger ("DemonOn");
-			joueurs [numero % 2].possessed = true;
 			//Debug.Log (joueurs [numero % 2].possessed);
 		}
 		if ((int) tempsPossession == 45) {
-			joueurs [numero%2].possessed = false;
 			numero = numero + 1;
 			tempsPossession = 0;
 			joueurs [numero % 2].gameObject.GetComponent<Movement> ().initialSpeed = 6;
