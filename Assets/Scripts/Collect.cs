@@ -26,7 +26,7 @@ public class Collect : MonoBehaviour {
 			//On le jete
 			if (Input.GetKeyDown (actif)) {
 				Vector3 moving = transform.position - lastPos;
-				obj.GetComponent<Collectable> ().Throw (moving.x > 0, moving.x < 0, moving.y > 0, moving.y < 0);
+				obj.GetComponent<Collectable> ().Throw (moving.x > 0, moving.x < 0, moving.y > 0, moving.y < 0, 1);
 				obj = null;
 			}
 		} else {
@@ -37,19 +37,20 @@ public class Collect : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
-		Collectable collectable = collider.GetComponent<Collectable> ();
+		Collectable collectable = collider.gameObject.GetComponent<Collectable> ();
 
 		//Si c'est un objet collectable et qu'on porte rien
 		if (collectable) {
 			//Si auto collect
-			if (collectable.autoCollect || Input.GetKeyDown (passif)) {
+			if ((collectable.autoCollect || Input.GetKey (passif)) && collectable.isCollectable()) {
 				collectObject (collider.gameObject);
 			}
 		}
 	}
 
 	void OnTriggerStay2D(Collider2D collider) {
-		if (Input.GetKeyDown (passif)) {
+		Collectable collectable = collider.gameObject.GetComponent<Collectable> ();
+		if (collectable && Input.GetKeyDown (passif)) {
 			collectObject (collider.gameObject);
 		}
 	}
