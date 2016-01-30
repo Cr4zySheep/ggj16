@@ -11,22 +11,17 @@ public class Movement : MonoBehaviour {
 	public float initialSpeed = 2;
 	float currentSpeed;
 	Vector3 mouvement;
-	Component spriteOriginal;
-	public Sprite Avecunobjet;
 	public bool glace;
 	private int vitesseDeGlisse;
 
 
 	// Use this for initialization
-	void Start () {
-		spriteOriginal = GetComponent<SpriteRenderer>();
+	void Awake () {
 		glace = false;
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
-		if (collider.GetComponent<Glissement>() == null) {
-			// Rien
-		} else {
+		if (collider.GetComponent<Glissement>()) {
 			glace = true;
 			vitesseDeGlisse = collider.GetComponent<Glissement>().coefficient;
 		}
