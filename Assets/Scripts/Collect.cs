@@ -50,7 +50,7 @@ public class Collect : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D collider) {
 		Collectable collectable = collider.gameObject.GetComponent<Collectable> ();
-		if (collectable && Input.GetKeyDown (passif)) {
+		if (collectable && Input.GetKeyDown (passif) && collectable.isCollectable()) {
 			collectObject (collider.gameObject);
 		}
 	}

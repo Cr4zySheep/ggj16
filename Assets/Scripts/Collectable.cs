@@ -7,6 +7,7 @@ public class Collectable : MonoBehaviour {
 	public float slowPercentage = .1f;
 	public float timeEffect = .0f;
 	public int point = 0;
+	public int eatPoint = 10;
 	public float strikeTime = .0f;
 
 	public GameObject owner;
