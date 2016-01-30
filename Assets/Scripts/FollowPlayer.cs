@@ -11,10 +11,10 @@ public class FollowPlayer : MonoBehaviour {
 		float y = (player1.transform.position.y + player2.transform.position.y) / 2;
 		transform.position = new Vector3(x, y, transform.position.z);
 
-		float size = Mathf.Abs (player2.transform.position.x - player1.transform.position.x + player2.transform.position.y - player1.transform.position.y);
+		float size = 0.7f* Mathf.Max (Mathf.Abs (player2.transform.position.x - player1.transform.position.x) , Mathf.Abs (player2.transform.position.y - player1.transform.position.y));
 		float potentialCameraSize = size;
-		if (potentialCameraSize < 2) {
-			potentialCameraSize = 2;
+		if (potentialCameraSize < 3) {
+			potentialCameraSize = 3;
 		} else if (potentialCameraSize > 10) {
 			potentialCameraSize = 10;
 		}
