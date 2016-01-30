@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour {
 	public KeyCode codeGauche = KeyCode.Q;
 	public KeyCode codeSprint = KeyCode.LeftShift;
 	public float initialSpeed = 2;
+
+	Animator anim;
 	float currentSpeed;
 	Vector3 mouvement;
 	public bool glace;
@@ -18,6 +20,7 @@ public class Movement : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		glace = false;
+		anim = GetComponent<Animator> ();
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
@@ -39,15 +42,19 @@ public class Movement : MonoBehaviour {
 		}
 		if (Input.GetKey (codeHaut)) {
 			mouvement += new Vector3 (0, currentSpeed, 0);
+			anim.SetTrigger ("GoUp");
 		}
 		if (Input.GetKey (codeBas)) {
 			mouvement += new Vector3 (0, -currentSpeed, 0);
+			anim.SetTrigger ("GoBottom");
 		}
 		if (Input.GetKey (codeDroite)) {
 			mouvement += new Vector3 (currentSpeed, 0, 0);
+			anim.SetTrigger ("GoRight");
 		}
 		if (Input.GetKey (codeGauche)) {
 			mouvement += new Vector3 (-currentSpeed, 0, 0);
+			anim.SetTrigger ("GoLeft");
 		}
 
 		if (glace) {
