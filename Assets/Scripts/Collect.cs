@@ -12,7 +12,7 @@ public class Collect : MonoBehaviour {
 
 	void FixedUpdate() {
 		if (obj) {
-			obj.transform.position = transform.position;
+			obj.transform.position = new Vector3(transform.position.x, transform.position.y, obj.transform.position.z);
 		}
 	}
 
@@ -57,7 +57,6 @@ public class Collect : MonoBehaviour {
 	void collectObject(GameObject collectingObj) {
 		if (!obj) {
 			obj = collectingObj.gameObject;
-			obj.transform.position = transform.position;
 			obj.GetComponent<Collectable> ().owner = gameObject;
 			changed = true;
 		}
