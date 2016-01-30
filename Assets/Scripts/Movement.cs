@@ -8,11 +8,9 @@ public class Movement : MonoBehaviour {
 	public KeyCode codeDroite = KeyCode.D;
 	public KeyCode codeGauche = KeyCode.Q;
 	public KeyCode codeSprint = KeyCode.LeftShift;
-	public KeyCode codePositif = KeyCode.E;
-	public KeyCode codeNegatif = KeyCode.R;
 	public float initialSpeed = 2;
-	private float currentSpeed;
-	private Vector3 mouvement;
+	float currentSpeed;
+	Vector3 mouvement;
 	Component spriteOriginal;
 	public Sprite Avecunobjet;
 	public bool glace;
@@ -37,7 +35,6 @@ public class Movement : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D collider){
 		glace = false;
 	}
-
 	// Update is called once per frame
 	void FixedUpdate () {
 		mouvement = new Vector3 (0, 0, 0);
@@ -58,7 +55,6 @@ public class Movement : MonoBehaviour {
 			mouvement += new Vector3 (-currentSpeed, 0, 0);
 		}
 
-
 		if (glace) {
 			// Ajoute l'inertie sur la glace
 			GetComponent<Rigidbody2D> ().AddForce (mouvement * Time.deltaTime * vitesseDeGlisse);
@@ -68,7 +64,5 @@ public class Movement : MonoBehaviour {
 
 		//Bouge le joueur pour la frame
 		transform.Translate (mouvement * Time.deltaTime);
-
-
 	}
 }
