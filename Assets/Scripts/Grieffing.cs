@@ -5,6 +5,7 @@ public class Grieffing : MonoBehaviour {
 	public KeyCode attackKey;
 	public float stonedTime = .5f;
 	public float reloadTime = .5f;
+	public GameObject hitPoint;
 
 	float currentStonedTime = 0;
 	float currentReloadTime = 0;
@@ -26,6 +27,8 @@ public class Grieffing : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D collider) {
 		Grieffing grieffing = collider.gameObject.GetComponent<Grieffing> ();
 		if (grieffing && Input.GetKey(attackKey) && currentReloadTime < 0) {
+			currentReloadTime = reloadTime;
+			Instantiate (hitPoint, (transform.position + collider.transform.position) / 2, new Quaternion());
 			grieffing.hurt (stonedTime);
 		}
 	}
