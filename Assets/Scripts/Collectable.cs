@@ -5,6 +5,10 @@ public class Collectable : MonoBehaviour {
 	public bool autoCollect = true;
 	public float throwSpeed = 10f;
 	public float slowPercentage = .1f;
+	public float timeEffect = .0f;
+	public int point = 0;
+
+	public GameObject owner;
 
 	Vector3 movement = new Vector3 (0, 0, 0);
 

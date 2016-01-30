@@ -20,6 +20,7 @@ public class Collect : MonoBehaviour {
 		if (!changed && obj) {
 			//On le pose
 			if (Input.GetKeyDown (passif)) {
+				obj.GetComponent<Collectable> ().owner = null;
 				obj = null;
 			}
 			//On le jete
@@ -57,6 +58,7 @@ public class Collect : MonoBehaviour {
 		if (!obj) {
 			obj = collectingObj.gameObject;
 			obj.transform.position = transform.position;
+			obj.GetComponent<Collectable> ().owner = gameObject;
 			changed = true;
 		}
 	}
