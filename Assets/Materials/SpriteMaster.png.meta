@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: eb2f5488f33b43c4fb36716e0147b7d7
+timeCreated: 1454192318
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteMaster_0
+    21300002: SpriteMaster_1
+    21300004: SpriteMaster_2
+    21300006: SpriteMaster_3
+    21300008: SpriteMaster_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpriteMaster_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 120
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 0}
+        - {x: 12, y: -59}
+        - {x: 23, y: -58}
+        - {x: 40, y: 18}
+        - {x: 40, y: 47}
+        - {x: 21, y: 60}
+        - {x: 14, y: 55}
+        - {x: 11, y: 43}
+        - {x: 16, y: 40}
+        - {x: 18, y: 40}
+        - {x: 16, y: 40}
+        - {x: 6, y: 31}
+        - {x: -4, y: 43}
+        - {x: -10, y: 46}
+        - {x: -21, y: 61}
+        - {x: -22, y: 62}
+        - {x: -60, y: 62}
+        - {x: -60, y: -62}
+        - {x: 1, y: -62}
+        - {x: 8, y: -57}
+        - {x: 7, y: -53}
+        - {x: 1, y: -49}
+      - - {x: 44, y: 24}
+        - {x: 42, y: 24}
+        - {x: 38, y: 21}
+        - {x: 38, y: 16}
+        - {x: 46, y: 16}
+        - {x: 48, y: 17}
+        - {x: 48, y: 20}
+      - - {x: 38, y: 56}
+        - {x: 34, y: 52}
+        - {x: 32, y: 45}
+        - {x: 32, y: 22}
+        - {x: 42, y: 22}
+        - {x: 50, y: 34}
+        - {x: 50, y: 55}
+        - {x: 46, y: 56}
+      - - {x: 47, y: 32}
+        - {x: 44, y: 28}
+        - {x: 44, y: 26}
+        - {x: 47, y: 22}
+        - {x: 52, y: 22}
+        - {x: 52, y: 32}
+      - - {x: 8, y: 48}
+        - {x: 6, y: 48}
+        - {x: 2, y: 45}
+        - {x: 2, y: 40}
+        - {x: 10, y: 40}
+        - {x: 12, y: 41}
+        - {x: 12, y: 44}
+      - - {x: 27, y: 60}
+        - {x: 24, y: 56}
+        - {x: 24, y: 54}
+        - {x: 27, y: 50}
+        - {x: 32, y: 50}
+        - {x: 32, y: 60}
+      - - {x: 8, y: 62}
+        - {x: 8, y: 54}
+        - {x: 9, y: 52}
+        - {x: 12, y: 52}
+        - {x: 16, y: 56}
+        - {x: 16, y: 58}
+        - {x: 13, y: 62}
+    - name: SpriteMaster_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2
+        width: 120
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 0}
+        - {x: 12, y: -59}
+        - {x: 23, y: -58}
+        - {x: 46, y: 17}
+        - {x: 46, y: 43}
+        - {x: 44, y: 44}
+        - {x: 38, y: 44}
+        - {x: 42, y: 44}
+        - {x: 45, y: 45}
+        - {x: 46, y: 50}
+        - {x: 46, y: 55}
+        - {x: 43, y: 62}
+        - {x: 36, y: 62}
+        - {x: 28, y: 59}
+        - {x: 26, y: 52}
+        - {x: 26, y: 50}
+        - {x: 24, y: 48}
+        - {x: 24, y: 41}
+        - {x: 24, y: 44}
+        - {x: 21, y: 47}
+        - {x: 26, y: 52}
+        - {x: 26, y: 56}
+        - {x: 25, y: 59}
+        - {x: 17, y: 62}
+        - {x: 9, y: 57}
+        - {x: 10, y: 54}
+        - {x: 12, y: 52}
+        - {x: 16, y: 52}
+        - {x: 15, y: 51}
+        - {x: 12, y: 52}
+        - {x: 10, y: 52}
+        - {x: 9, y: 55}
+        - {x: 1, y: 55}
+        - {x: -3, y: 49}
+        - {x: -1, y: 34}
+        - {x: -4, y: 43}
+        - {x: -10, y: 46}
+        - {x: -21, y: 61}
+        - {x: -22, y: 62}
+        - {x: -60, y: 62}
+        - {x: -60, y: -62}
+        - {x: 1, y: -62}
+        - {x: 8, y: -57}
+        - {x: 7, y: -53}
+        - {x: 1, y: -49}
+      - - {x: 31, y: 22}
+        - {x: 28, y: 18}
+        - {x: 28, y: 16}
+        - {x: 31, y: 12}
+        - {x: 36, y: 12}
+        - {x: 36, y: 22}
+      - - {x: 36, y: 30}
+        - {x: 34, y: 28}
+        - {x: 34, y: 16}
+        - {x: 36, y: 14}
+        - {x: 48, y: 14}
+        - {x: 48, y: 23}
+        - {x: 46, y: 30}
+      - - {x: 45, y: 38}
+        - {x: 42, y: 34}
+        - {x: 42, y: 32}
+        - {x: 45, y: 28}
+        - {x: 50, y: 28}
+        - {x: 50, y: 38}
+      - - {x: 49, y: 50}
+        - {x: 46, y: 46}
+        - {x: 46, y: 44}
+        - {x: 49, y: 40}
+        - {x: 54, y: 40}
+        - {x: 54, y: 50}
+    - name: SpriteMaster_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2
+        width: 120
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 0}
+        - {x: 12, y: -59}
+        - {x: 23, y: -58}
+        - {x: 52, y: 21}
+        - {x: 52, y: 55}
+        - {x: 49, y: 56}
+        - {x: 43, y: 53}
+        - {x: 43, y: 47}
+        - {x: 38, y: 43}
+        - {x: 38, y: 40}
+        - {x: 40, y: 38}
+        - {x: 38, y: 36}
+        - {x: 38, y: 40}
+        - {x: 36, y: 42}
+        - {x: 42, y: 48}
+        - {x: 42, y: 50}
+        - {x: 40, y: 52}
+        - {x: 39, y: 61}
+        - {x: 38, y: 62}
+        - {x: 22, y: 62}
+        - {x: 17, y: 61}
+        - {x: 13, y: 57}
+        - {x: 15, y: 51}
+        - {x: 18, y: 50}
+        - {x: 18, y: 48}
+        - {x: 20, y: 46}
+        - {x: 22, y: 46}
+        - {x: 20, y: 46}
+        - {x: 18, y: 44}
+        - {x: 18, y: 48}
+        - {x: 16, y: 50}
+        - {x: 14, y: 50}
+        - {x: 10, y: 46}
+        - {x: 10, y: 44}
+        - {x: 14, y: 40}
+        - {x: 6, y: 31}
+        - {x: -4, y: 43}
+        - {x: -10, y: 46}
+        - {x: -21, y: 61}
+        - {x: -22, y: 62}
+        - {x: -60, y: 62}
+        - {x: -60, y: -62}
+        - {x: 1, y: -62}
+        - {x: 8, y: -57}
+        - {x: 7, y: -53}
+        - {x: 1, y: -49}
+      - - {x: 42, y: 28}
+        - {x: 42, y: 23}
+        - {x: 46, y: 20}
+        - {x: 48, y: 20}
+        - {x: 52, y: 23}
+        - {x: 52, y: 28}
+    - name: SpriteMaster_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 120
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 0}
+        - {x: 12, y: -59}
+        - {x: 20, y: -56}
+        - {x: 26, y: -27}
+        - {x: 32, y: 24}
+        - {x: 32, y: 34}
+        - {x: 34, y: 32}
+        - {x: 32, y: 26}
+        - {x: 32, y: 24}
+        - {x: 35, y: 19}
+        - {x: 44, y: 20}
+        - {x: 58, y: 30}
+        - {x: 58, y: 38}
+        - {x: 57, y: 39}
+        - {x: 33, y: 55}
+        - {x: 30, y: 54}
+        - {x: 28, y: 52}
+        - {x: 28, y: 50}
+        - {x: 23, y: 49}
+        - {x: 31, y: 55}
+        - {x: 29, y: 61}
+        - {x: 21, y: 61}
+        - {x: 20, y: 58}
+        - {x: 20, y: 56}
+        - {x: 16, y: 60}
+        - {x: 14, y: 60}
+        - {x: 12, y: 58}
+        - {x: 12, y: 56}
+        - {x: 16, y: 52}
+        - {x: 16, y: 48}
+        - {x: 14, y: 45}
+        - {x: 14, y: 42}
+        - {x: 16, y: 40}
+        - {x: 18, y: 40}
+        - {x: 20, y: 42}
+        - {x: 20, y: 44}
+        - {x: 20, y: 40}
+        - {x: 16, y: 40}
+        - {x: 14, y: 38}
+        - {x: 14, y: 44}
+        - {x: 16, y: 48}
+        - {x: 16, y: 50}
+        - {x: 14, y: 52}
+        - {x: 12, y: 52}
+        - {x: 12, y: 56}
+        - {x: 9, y: 61}
+        - {x: 3, y: 59}
+        - {x: 3, y: 54}
+        - {x: 4, y: 52}
+        - {x: -18, y: 62}
+        - {x: -60, y: 62}
+        - {x: -60, y: -62}
+        - {x: 1, y: -62}
+        - {x: 8, y: -57}
+        - {x: 7, y: -53}
+        - {x: 1, y: -49}
+      - - {x: 30, y: 20}
+        - {x: 30, y: 15}
+        - {x: 34, y: 12}
+        - {x: 36, y: 12}
+        - {x: 40, y: 15}
+        - {x: 40, y: 20}
+      - - {x: 43, y: 28}
+        - {x: 40, y: 24}
+        - {x: 40, y: 22}
+        - {x: 43, y: 18}
+        - {x: 48, y: 18}
+        - {x: 48, y: 28}
+      - - {x: 48, y: 28}
+        - {x: 48, y: 23}
+        - {x: 52, y: 20}
+        - {x: 54, y: 20}
+        - {x: 58, y: 23}
+        - {x: 58, y: 28}
+      - - {x: 46, y: 54}
+        - {x: 44, y: 54}
+        - {x: 40, y: 51}
+        - {x: 40, y: 46}
+        - {x: 48, y: 46}
+        - {x: 50, y: 47}
+        - {x: 50, y: 50}
+      - - {x: 34, y: 62}
+        - {x: 34, y: 57}
+        - {x: 38, y: 54}
+        - {x: 40, y: 54}
+        - {x: 44, y: 57}
+        - {x: 44, y: 62}
+    - name: SpriteMaster_4
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2
+        width: 120
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 0}
+        - {x: 12, y: -59}
+        - {x: 20, y: -56}
+        - {x: 26, y: -27}
+        - {x: 32, y: 24}
+        - {x: 32, y: 34}
+        - {x: 34, y: 36}
+        - {x: 34, y: 38}
+        - {x: 32, y: 40}
+        - {x: 30, y: 40}
+        - {x: 30, y: 46}
+        - {x: 30, y: 42}
+        - {x: 32, y: 40}
+        - {x: 34, y: 40}
+        - {x: 34, y: 36}
+        - {x: 32, y: 32}
+        - {x: 32, y: 30}
+        - {x: 35, y: 24}
+        - {x: 45, y: 23}
+        - {x: 48, y: 24}
+        - {x: 48, y: 45}
+        - {x: 42, y: 62}
+        - {x: 36, y: 62}
+        - {x: 6, y: 50}
+        - {x: 4, y: 41}
+        - {x: 6, y: 19}
+        - {x: 6, y: 21}
+        - {x: 2, y: 22}
+        - {x: -4, y: 43}
+        - {x: -10, y: 46}
+        - {x: -21, y: 61}
+        - {x: -22, y: 62}
+        - {x: -60, y: 62}
+        - {x: -60, y: -62}
+        - {x: 1, y: -62}
+        - {x: 8, y: -57}
+        - {x: 7, y: -53}
+        - {x: 1, y: -49}
+      - - {x: 32, y: 24}
+        - {x: 32, y: 19}
+        - {x: 36, y: 16}
+        - {x: 38, y: 16}
+        - {x: 42, y: 19}
+        - {x: 42, y: 24}
+      - - {x: 46, y: 42}
+        - {x: 42, y: 40}
+        - {x: 42, y: 36}
+        - {x: 43, y: 34}
+        - {x: 46, y: 34}
+        - {x: 50, y: 36}
+        - {x: 50, y: 40}
+        - {x: 49, y: 42}
+      - - {x: 40, y: 52}
+        - {x: 40, y: 44}
+        - {x: 41, y: 42}
+        - {x: 44, y: 42}
+        - {x: 48, y: 46}
+        - {x: 48, y: 48}
+        - {x: 45, y: 52}
+      - - {x: 16, y: 56}
+        - {x: 13, y: 55}
+        - {x: 6, y: 50}
+        - {x: 6, y: 44}
+        - {x: 20, y: 44}
+        - {x: 22, y: 49}
+        - {x: 22, y: 54}
+        - {x: 20, y: 56}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

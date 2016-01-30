@@ -45,7 +45,7 @@ public class Collect : MonoBehaviour {
 			if ((collectable.autoCollect || Input.GetKey (passif)) && collectable.isCollectable()) {
 				collectObject (collider.gameObject);
 			}
-			if (gameObject.GetComponent<Possession> ().possessed == true) {
+			if (gameObject.GetComponent<ShortLife> ()) {
 				gameObject.GetComponent<Score> ().addScore(collider.gameObject.GetComponent<Collectable> ().eatPoint);
 				Debug.Log (collider.gameObject.GetComponent<Collectable> ().eatPoint);
 				Debug.Log (gameObject.GetComponent<Score> ().score);
