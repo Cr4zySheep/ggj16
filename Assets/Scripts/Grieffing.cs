@@ -6,6 +6,7 @@ public class Grieffing : MonoBehaviour {
 	public float stonedTime = .5f;
 	public float reloadTime = .5f;
 	public GameObject hitPoint;
+	public int joystick;
 
 	Animator anim;
 	float currentStonedTime = 0;
@@ -31,7 +32,7 @@ public class Grieffing : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D collider) {
 		Grieffing grieffing = collider.gameObject.GetComponent<Grieffing> ();
-		if (grieffing && Input.GetKey(attackKey) && currentReloadTime < 0) {
+		if (grieffing && (Input.GetKey(attackKey) || Input.GetAxis("A" + joystick.ToString()) > 0) && currentReloadTime < 0) {
 			if (GetComponent<ShortLife> ()) {
 				collider.gameObject.GetComponent<Score> ().addScore (-5);
 				GetComponent<Score> ().addScore (2);

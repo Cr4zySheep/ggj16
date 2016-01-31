@@ -4,6 +4,7 @@ using System.Collections;
 public class Collect : MonoBehaviour {
 	public KeyCode passif = KeyCode.A;
 	public KeyCode actif = KeyCode.E;
+	public int joystick;
 
 	GameObject obj = null;
 	bool changed = false;
@@ -19,12 +20,12 @@ public class Collect : MonoBehaviour {
 	void Update() {
 		if (!changed && obj) {
 			//On le pose
-			if (Input.GetKeyDown (passif)) {
+			if (Input.GetKeyDown (passif) || Input.GetAxis("P" + joystick.ToString()) > 0) {
 				obj.GetComponent<Collectable> ().owner = null;
 				obj = null;
 			}
 			//On le jete
-			if (Input.GetKeyDown (actif)) {
+			if (Input.GetKeyDown (actif) || Input.GetAxis("A" + joystick.ToString()) > 0) {
 				Vector3 moving = transform.position - lastPos;
 				obj.GetComponent<Collectable> ().Throw (moving.x > 0, moving.x < 0, moving.y > 0, moving.y < 0, 1);
 				obj = null;
@@ -46,7 +47,7 @@ public class Collect : MonoBehaviour {
 				Destroy(collider.gameObject);
 			}
 			//Si auto collect
-			else if ((collectable.autoCollect || Input.GetKey (passif)) && collectable.isCollectable()) {
+			else if ((collectable.autoCollect || Input.GetKey (passif)) || Input.GetAxis("P" + joystick.ToString()) > 0 && collectable.isCollectable()) {
 				collectObject (collider.gameObject);
 			}
 		}
@@ -54,7 +55,7 @@ public class Collect : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D collider) {
 		Collectable collectable = collider.gameObject.GetComponent<Collectable> ();
-		if (collectable && Input.GetKeyDown (passif) && collectable.isCollectable()) {
+		if (collectable && (Input.GetKeyDown (passif) || Input.GetAxis("P" + joystick.ToString()) > 0) && collectable.isCollectable()) {
 			collectObject (collider.gameObject);
 		}
 	}

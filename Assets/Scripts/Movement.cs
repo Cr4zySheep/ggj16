@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour {
 	public KeyCode codeDroite = KeyCode.D;
 	public KeyCode codeGauche = KeyCode.Q;
 	public KeyCode codeSprint = KeyCode.LeftShift;
+	public int joystick;
 	public float initialSpeed = 2;
 
 	Animator anim;
@@ -38,26 +39,26 @@ public class Movement : MonoBehaviour {
 	void FixedUpdate () {
 		mouvement = new Vector3 (0, 0, 0);
 
-		if (Input.GetKey (codeHaut)) {
+		if (Input.GetKey (codeHaut) || Input.GetAxis("V" + joystick.ToString()) > 0) {
 			mouvement += new Vector3 (0, currentSpeed, 0);
 			anim.SetTrigger ("GoUp");
 		}
-		if (Input.GetKey (codeBas)) {
+		if (Input.GetKey (codeBas) || Input.GetAxis("V" + joystick.ToString()) < 0) {
 			mouvement += new Vector3 (0, -currentSpeed, 0);
 			anim.SetTrigger ("GoBottom");
 		}
-		if (Input.GetKey (codeDroite)) {
+		if (Input.GetKey (codeDroite) || Input.GetAxis("H" + joystick.ToString()) > 0) {
 			mouvement += new Vector3 (currentSpeed, 0, 0);
 			anim.SetTrigger ("GoRight");
 		}
-		if (Input.GetKey (codeGauche)) {
+		if (Input.GetKey (codeGauche) || Input.GetAxis("H" + joystick.ToString()) < 0) {
 			mouvement += new Vector3 (-currentSpeed, 0, 0);
 			anim.SetTrigger ("GoLeft");
 		}
 
 		if (mouvement == new Vector3 (0, 0, 0)) {
 			anim.SetTrigger ("Stop");
-		} else if (Input.GetKey (codeSprint)) {
+		} else if (Input.GetKey (codeSprint) || Input.GetAxis("S" + joystick.ToString()) > 0) {
 			mouvement *= 2;
 		}
 
