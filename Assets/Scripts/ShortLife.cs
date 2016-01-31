@@ -17,7 +17,7 @@ public class ShortLife : MonoBehaviour {
 		p += Time.deltaTime;
 
 		if (p >= 1f) {
-			GetComponent<Score> ().addScore (-3 * (int)(p));
+			GetComponent<Score> ().addScore (-2 * (int)(p));
 			p -= (int)p;
 		}
 

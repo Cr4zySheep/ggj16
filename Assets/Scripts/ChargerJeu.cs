@@ -15,7 +15,7 @@ public class ChargerJeu : MonoBehaviour {
 	}
 
 	public void ChargerNiveau () {
-		SceneManager.LoadScene("Level01");
+		SceneManager.LoadScene("Level02");
 	}
 
 	public void Quitter(){
