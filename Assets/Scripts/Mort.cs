@@ -4,13 +4,14 @@ using System.Collections;
 
 public class Mort : MonoBehaviour {
 	public GameObject tombstone;
+	public AudioClip clip;
 
 	Vector3 deadPos;
 	float tempsSpawn;
 	bool chrono;
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (chrono) {
 			tempsSpawn += Time.deltaTime;
 			transform.position = deadPos;
@@ -20,6 +21,7 @@ public class Mort : MonoBehaviour {
 			chrono = false;
 			tempsSpawn = 0;
 			//lblRespawn.SetActive (false);
+			GetComponent<Movement> ().enabled = false;
 			GetComponent<SpriteRenderer> ().enabled = true;
 			GetComponent<BoxCollider2D> ().enabled = true;
 			gameObject.transform.position = new Vector3 (0, 0, 0);
@@ -33,6 +35,9 @@ public class Mort : MonoBehaviour {
 	}
 
 	public void kill() {
+		GetComponent<AudioSource> ().clip = clip;
+		GetComponent<AudioSource> ().Play();
+		GetComponent<Movement> ().enabled = false;
 		GetComponent<SpriteRenderer> ().enabled = false;
 		GetComponent<BoxCollider2D> ().enabled = false;
 		GetComponent<Score> ().addScore (-15);

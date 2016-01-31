@@ -5,8 +5,7 @@ public class Readiness : MonoBehaviour {
 
 	public Transform camera;
 	public KeyCode r1 = KeyCode.F;
-	public KeyCode r2 = KeyCode.Alpha9;
-	public KeyCode r2bis = KeyCode.JoystickButton1;
+	public KeyCode r2 = KeyCode.Keypad9;
 	public GameObject timer1;
 	public GameObject timer2;
 	public GameObject player1;
@@ -24,12 +23,14 @@ public class Readiness : MonoBehaviour {
 		timer1.SetActive (false);
 		timer2.SetActive (false);
 		gameObject.transform.position = new Vector3 ((camera.position.x+3f),(camera.position.y+1.7f),gameObject.transform.position.z);
-		if (Input.GetKey (r1)){
+
+		if (Input.GetKey (r1) || Input.GetButtonDown("A1")){
+			Debug.Log ("Ici");
 			GameObject.Find("p1red").GetComponent<SpriteRenderer>().enabled = false;
 			GameObject.Find("p1green").GetComponent<SpriteRenderer>().enabled = true;
 		}
-		if (Input.GetKey (r2)||Input.GetKey (r2bis)){
-			Debug.Log ("ok");
+		if (Input.GetKey (r2) || Input.GetButtonDown("A2")){
+			Debug.Log ("là");
 			GameObject.Find("p2red").GetComponent<SpriteRenderer>().enabled = false;
 			GameObject.Find("p2green").GetComponent<SpriteRenderer>().enabled = true;
 		}

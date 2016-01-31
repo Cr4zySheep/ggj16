@@ -8,7 +8,12 @@ public class CollectMarmitte : MonoBehaviour {
 	public Color flash;
 	public GameObject victory;
 
+	AudioSource source;
 	float currentTime = 0;
+
+	void Awake() {
+		source = GetComponent<AudioSource> ();
+	}
 
 	void Update() {
 		if (currentTime < 1) {
@@ -25,6 +30,9 @@ public class CollectMarmitte : MonoBehaviour {
 			slider.value += collectable.eatPoint;
 			Destroy (collider.gameObject);
 			currentTime = 0;
+
+			source.Play ();
+
 
 			if (slider.value >= slider.maxValue) {
 				victory.SetActive (true);

@@ -10,7 +10,9 @@ public class Movement : MonoBehaviour {
 	public KeyCode codeSprint = KeyCode.LeftShift;
 	public int joystick;
 	public float initialSpeed = 2;
+	public AudioClip clip;
 
+	AudioSource source;
 	Animator anim;
 	float currentSpeed;
 	Vector3 mouvement;
@@ -23,6 +25,7 @@ public class Movement : MonoBehaviour {
 		currentSpeed = initialSpeed;
 		glace = false;
 		anim = GetComponent<Animator> ();
+		source = GetComponent<AudioSource> ();
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
@@ -58,8 +61,14 @@ public class Movement : MonoBehaviour {
 
 		if (mouvement == new Vector3 (0, 0, 0)) {
 			anim.SetTrigger ("Stop");
-		} else if (Input.GetKey (codeSprint) || Input.GetAxis("S" + joystick.ToString()) > 0) {
-			mouvement *= 2;
+		} else {
+			if (!source.isPlaying) {
+				source.clip = clip;
+				source.Play ();
+			}
+			if (Input.GetKey (codeSprint) || Input.GetAxis ("S" + joystick.ToString ()) > 0) {
+				mouvement *= 2;
+			}
 		}
 
 		if (glace) {

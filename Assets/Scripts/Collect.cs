@@ -5,11 +5,17 @@ public class Collect : MonoBehaviour {
 	public KeyCode passif = KeyCode.A;
 	public KeyCode actif = KeyCode.E;
 	public int joystick;
+	public AudioClip clip;
 
+	AudioSource source;
 	GameObject obj = null;
 	bool changed = false;
 
 	Vector3 lastPos;
+
+	void Awake() {
+		source = GetComponent<AudioSource> ();
+	}
 
 	void FixedUpdate() {
 		if (obj) {
@@ -20,12 +26,14 @@ public class Collect : MonoBehaviour {
 	void Update() {
 		if (!changed && obj) {
 			//On le pose
-			if (Input.GetKeyDown (passif) || Input.GetAxis("P" + joystick.ToString()) > 0) {
+			if (Input.GetKeyDown (passif) || Input.GetButtonDown("P" + joystick.ToString())) {
 				obj.GetComponent<Collectable> ().owner = null;
 				obj = null;
 			}
 			//On le jete
-			if (Input.GetKeyDown (actif) || Input.GetAxis("A" + joystick.ToString()) > 0) {
+			if (Input.GetKeyDown (actif) || Input.GetButtonDown("A" + joystick.ToString())) {
+				source.clip = clip;
+				source.Play ();
 				Vector3 moving = transform.position - lastPos;
 				obj.GetComponent<Collectable> ().Throw (moving.x > 0, moving.x < 0, moving.y > 0, moving.y < 0, 1);
 				obj = null;

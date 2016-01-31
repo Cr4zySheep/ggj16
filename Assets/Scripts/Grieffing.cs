@@ -7,13 +7,16 @@ public class Grieffing : MonoBehaviour {
 	public float reloadTime = .5f;
 	public GameObject hitPoint;
 	public int joystick;
+	public AudioClip clip;
 
+	AudioSource source;
 	Animator anim;
 	float currentStonedTime = 0;
 	float currentReloadTime = 0;
 
 	void Awake() {
 		anim = GetComponent<Animator> ();
+		source = GetComponent<AudioSource> ();
 	}
 
 	void Update() {
@@ -37,6 +40,8 @@ public class Grieffing : MonoBehaviour {
 				collider.gameObject.GetComponent<Score> ().addScore (-5);
 				GetComponent<Score> ().addScore (2);
 			}
+			source.clip = clip;
+			source.Play ();
 			currentReloadTime = reloadTime;
 			Instantiate (hitPoint, (transform.position + collider.transform.position) / 2, new Quaternion());
 			grieffing.hurt (stonedTime);
