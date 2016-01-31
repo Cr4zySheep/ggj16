@@ -41,15 +41,13 @@ public class Collect : MonoBehaviour {
 
 		//Si c'est un objet collectable et qu'on porte rien
 		if (collectable) {
-			//Si auto collect
-			if ((collectable.autoCollect || Input.GetKey (passif)) && collectable.isCollectable()) {
-				collectObject (collider.gameObject);
+			if (gameObject.GetComponent<ShortLife> () && collectable.eatPoint > 0) {
+				gameObject.GetComponent<Score> ().addScore(collectable.eatPoint);
+				Destroy(collider.gameObject);
 			}
-			if (gameObject.GetComponent<ShortLife> ()) {
-				gameObject.GetComponent<Score> ().addScore(collider.gameObject.GetComponent<Collectable> ().eatPoint);
-				Debug.Log (collider.gameObject.GetComponent<Collectable> ().eatPoint);
-				Debug.Log (gameObject.GetComponent<Score> ().score);
-				Object.Destroy(collider.gameObject);
+			//Si auto collect
+			else if ((collectable.autoCollect || Input.GetKey (passif)) && collectable.isCollectable()) {
+				collectObject (collider.gameObject);
 			}
 		}
 	}

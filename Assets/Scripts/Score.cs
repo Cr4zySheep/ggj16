@@ -13,9 +13,9 @@ public class Score : MonoBehaviour {
 
 	public void addScore(int many) {
 		score += many;
-		if (score < 0) {
+		/*if (score < 0) {
 			score = 0;
-		}
+		}*/
 
 		label.text = score.ToString();
 	}

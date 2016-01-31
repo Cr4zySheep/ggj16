@@ -63,25 +63,5 @@ public class Chronometre : MonoBehaviour {
 		} else if(tempsRestant > 0) {
 			tempsRestant -= Time.deltaTime;
 		}
-
-		//Gerer la possession
-
-		tempsPossession += Time.deltaTime;
-		if ((int) tempsPossession == 30) {
-			GameObject gameObj = joueurs [numero % 2].gameObject;
-			gameObj.GetComponent<Animator> ().SetTrigger ("DemonOn");
-			//Debug.Log (joueurs [numero % 2].possessed);
-		}
-		if ((int) tempsPossession == 45) {
-			numero = numero + 1;
-			tempsPossession = 0;
-			joueurs [numero % 2].gameObject.GetComponent<Movement> ().initialSpeed = 6;
-			//VITESSE ++
-			//NOUVEAUX COMPORTEMENTS ENABLED
-			//Debug.Log (joueurs [numero % 2].possessed);
-		}
-
 	}
-
-
 }
